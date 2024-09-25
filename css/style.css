@@ -1,0 +1,144 @@
+
+/* Fonte */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,300;1,400;1,700&display=swap');
+
+:root {
+    /* Paleta de cores */
+    --cor-principal: #6c5fff;
+    --cor-01: #f9f9f9;
+    --cor-02: #dfdfdf;
+    --cor-03: #8e8e8e;
+    --cor-04: #595959;
+    --cor-05: #232323;  
+}
+
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    background-color: var(--cor-02);
+    color: var(--cor-05);
+}
+
+/*  ==== Barra de navegação ==== */
+header {
+    background-color: var(--cor-05);
+    color: var(--cor-01);
+
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    padding: 1.2rem 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header span {
+    color: var(--cor-principal);
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    letter-spacing: 0.1rem;
+    transition: 0.5s;
+
+}
+
+nav a:hover {
+    color: var(--cor-principal);
+
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* ==== Noticias ==== */
+main {
+    margin: 5rem auto;
+
+}
+
+article {
+    background-color: var(--cor-01);
+    height: 16rem;
+    margin: 1rem 5rem;
+    padding: 1rem;
+    border-radius: 0.6rem;
+    transition: 0.5s;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-columns: 16rem auto;
+}
+
+article p {
+    margin: 1rem;
+    text-align: justify;
+}
+article:hover {
+    cursor: pointer;
+    transform: scale(1.01);
+    /*          x y desfoque   espessura cor */
+    box-shadow: 0 0 0.5rem     0.1rem var(--cor-03);
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.foto {
+    overflow: hidden;
+    margin-right: 1rem;
+}
+
+.foto img {
+    height: 100%;
+}
+
+.leia-mais {
+    font-weight: 700;
+    color: var(--cor-principal);
+    text-align: right;
+    padding: 1rem;
+}
+
+
+
+
+/*  ==== Rodape ==== */
+footer {
+    
+    background-color: var(--cor-05);
+    color: var(--cor-02);
+    padding: 1rem 5rem;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    opacity: 0.6;
+}
